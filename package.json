@@ -1,0 +1,31 @@
+{
+  "name": "node-forum-server",
+  "version": "1.0.0",
+  "description": "server node js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "make:controller": "node config/makeController.js make:controller",
+    "make:model": "node config/makeModel.js make:model",
+    "make:router": "node config/makeRouter.js make:router",
+    "make:all": "node config/ExecuteAll.js  make:all"
+  },
+  "keywords": [
+    "forum",
+    "node",
+    "js"
+  ],
+  "author": "muhammad nor kholit",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.1",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.33.0",
+    "yargs": "^17.7.2"
+  }
+}
