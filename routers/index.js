@@ -1,4 +1,8 @@
 const express = require("express");
 const baseRouter = express.Router();
 
-module.exports = baseRouter;
+
+
+ const users = require("./usersRouter.js");
+baseRouter.use("", users); 
+ module.exports = baseRouter;
