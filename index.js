@@ -5,9 +5,12 @@ require("dotenv").config();
 const app = express();
 const cors = require("cors");
 const baseRouter = require("./routers");
-
+const corsOptions = {
+  origin: "http://localhost:3000", // Replace with your React.js app's URL
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
 app.set(express.json());
-app.set(cors());
+app.set(cors(corsOptions));
 
 app.use("/api", baseRouter);
 
