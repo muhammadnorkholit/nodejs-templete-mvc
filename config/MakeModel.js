@@ -21,7 +21,7 @@ yargs.command(
         const ${modelName} = db.define('${tablename || modelName}', {
         
         },{
-        tableName: ${modelName.toLowerCase()},
+        tableName: '${modelName.toLowerCase()}',
         timestamps: false,
       });
         module.exports  = ${modelName};

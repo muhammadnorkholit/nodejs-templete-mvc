@@ -10,7 +10,7 @@ const users = db.define(
     role: DataTypes.ENUM("anggota", "admin", "petugas"),
   },
   {
-    tableName: users,
+    tableName: "users",
     timestamps: false,
   }
 );
