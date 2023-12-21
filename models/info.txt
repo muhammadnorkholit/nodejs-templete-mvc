@@ -1,0 +1,1 @@
+ini merupakan folder untuk model yg terhubung ke database
