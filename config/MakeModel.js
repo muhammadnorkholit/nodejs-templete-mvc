@@ -21,7 +21,7 @@ yargs.command(
         const ${modelName} = db.define('${tablename || modelName}', {
         
         },{
-        tableName: ${modelName.toLowerCase()}, // Ganti dengan nama tabel yang sesuai, yaitu "question" bukan "Question"
+        tableName: ${modelName.toLowerCase()},
         timestamps: false,
       });
         module.exports  = ${modelName};
