@@ -58,6 +58,11 @@ create in one time (model,controller,route)
 ```bash
   npm run make:all name
 ```
+Manual Query Sequelize
+```bash
+const [results, metadata] = await db.query("SELECT * FROM buku_terpopuler");
+```
+   
 ## Authors
 
 - [@muhammadnorkholit](https://github.com/muhammadnorkholit)
